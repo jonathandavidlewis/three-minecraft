@@ -1,4 +1,4 @@
-import THREE from "three";
+//import THREE from "three";
 
 //Camera
 const camera = new THREE.PerspectiveCamera( 
@@ -40,11 +40,10 @@ const camera = new THREE.PerspectiveCamera(
     for (var x = options.postionX; x < options.lengthX; x++) {
       for (var y = options.positionY; y < options.lengthY; y++) {
         const vox = new Voxel();
-        vox.position = {
-          x,
-          y,
-          z: 0
-        }
+        vox.position.x = x;
+        vox.position.x = x;
+        vox.position.z = 0;
+        debugger;
         voxels.push(vox)
       }
     }
@@ -68,7 +67,7 @@ const camera = new THREE.PerspectiveCamera(
   
   scene.add( light );
   scene.add( voxel1 );
-  scene.add( manyVoxels );
+
   manyVoxels.forEach(vox => scene.add( vox ))
   
   //scene.add( demoCube );
