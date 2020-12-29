@@ -32,6 +32,7 @@ const moveBackward = function() {
   selectedCamera.position.z -= 0.05;
 }
 
+//toggle free look
 document.addEventListener('mousedown', function(e) {
   
   if (e.which == 2) {
@@ -71,3 +72,13 @@ document.addEventListener("keydown", event => {
       console.log("default")
   }
 });
+
+
+document.addEventListener('mousemove', e => {
+  if (isDrawing === true) {
+    
+
+  }
+});
+
+
